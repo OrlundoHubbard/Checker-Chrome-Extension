@@ -8,14 +8,13 @@
 </head>
 <body class="container">
     <form class="form-data" autocomplete="on">
-        <div class="enter-domain">
+        <label class="enter-domain" for="domain-name">
             Enter the domain you're looking for:
-        </div>
-        <div>
-            <input type="text" class="domain-name">
-        </div>
-        <button class="search-btn">Search</button>
+        </label>
+        <input type="text" id="domain-name">
+        <button id="search-btn">Search</button>
     </form>
+    <div id="no-domain"></div>
     <div class="result">
         <div class="loading">checking that...</div>
         <div class="unavailable"></div>
